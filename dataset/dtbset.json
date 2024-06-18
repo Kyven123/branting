@@ -1,0 +1,17 @@
+{
+	"name": "dtbset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaselocation",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "data_source_table"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

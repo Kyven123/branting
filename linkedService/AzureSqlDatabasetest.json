@@ -1,0 +1,25 @@
+{
+	"name": "AzureSqlDatabasetest",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "kyven123.database.windows.net",
+			"database": "test",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"hostNameInCertificate": "",
+			"authenticationType": "SQL",
+			"userName": "kyven123",
+			"password": {
+				"type": "SecureString",
+				"value": "**********"
+			}
+		},
+		"connectVia": {
+			"referenceName": "selfhostedir1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

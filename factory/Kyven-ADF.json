@@ -1,0 +1,9 @@
+{
+	"name": "Kyven-ADF",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6555968a-5c1f-47b4-a68c-42594a6eb021",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

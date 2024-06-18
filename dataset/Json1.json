@@ -1,0 +1,1289 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data.json",
+				"container": "tea123123"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"date_inspection": {
+					"type": "string"
+				},
+				"inspector": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"username": {
+							"type": "string"
+						},
+						"email": {
+							"type": "string"
+						},
+						"title": {
+							"type": "null"
+						},
+						"code": {
+							"type": "string"
+						},
+						"id": {
+							"type": "integer"
+						}
+					}
+				},
+				"inspection_location": {
+					"type": "string"
+				},
+				"report_type": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"allow_submit_urgent": {
+							"type": "boolean"
+						},
+						"id": {
+							"type": "integer"
+						},
+						"show_production_line": {
+							"type": "boolean"
+						},
+						"production_line_mandatory": {
+							"type": "boolean"
+						},
+						"show_shift": {
+							"type": "boolean"
+						},
+						"shift_mandatory": {
+							"type": "boolean"
+						},
+						"force_pending_on_aql_sections_enabled": {
+							"type": "null"
+						},
+						"inspection_system": {
+							"type": "string"
+						},
+						"conclusion_type": {
+							"type": "string"
+						}
+					}
+				},
+				"date_created": {
+					"type": "string"
+				},
+				"date_modified": {
+					"type": "string"
+				},
+				"recycled": {
+					"type": "integer"
+				},
+				"factory_name": {
+					"type": "string"
+				},
+				"contact_name": {
+					"type": "string"
+				},
+				"contact_number": {
+					"type": "null"
+				},
+				"inspection_company": {
+					"type": "null"
+				},
+				"approved_by": {
+					"type": "null"
+				},
+				"id": {
+					"type": "integer"
+				},
+				"assignments_items": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"inspection_status_text": {
+								"type": "string"
+							},
+							"inspection_result_text": {
+								"type": "string"
+							},
+							"sampling_size": {
+								"type": "integer"
+							},
+							"sampled_inspected": {
+								"type": "integer"
+							},
+							"notes": {
+								"type": "string"
+							},
+							"inspection_status_id": {
+								"type": "integer"
+							},
+							"inspection_status_msg": {
+								"type": "string"
+							},
+							"fabric_description": {
+								"type": "null"
+							},
+							"inspection_sequence": {
+								"type": "null"
+							},
+							"inspection_result_id": {
+								"type": "integer"
+							},
+							"inspection_completed_date": {
+								"type": "string"
+							},
+							"client_msg": {
+								"type": "string"
+							},
+							"manager_msg": {
+								"type": "string"
+							},
+							"recycled": {
+								"type": "integer"
+							},
+							"qty_to_inspect": {
+								"type": "integer"
+							},
+							"qty_inspected": {
+								"type": "integer"
+							},
+							"defect_rate": {
+								"type": "number"
+							},
+							"total_good_pieces": {
+								"type": "null"
+							},
+							"conclusion_remarks": {
+								"type": "string"
+							},
+							"inspection_total_critical_defect_count": {
+								"type": "null"
+							},
+							"inspection_total_major_defect_count": {
+								"type": "null"
+							},
+							"inspection_total_minor_defect_count": {
+								"type": "null"
+							},
+							"auditor_msg": {
+								"type": "string"
+							},
+							"booking_msg": {
+								"type": "null"
+							},
+							"supplier_booking_msg": {
+								"type": "null"
+							},
+							"inspector_decision": {
+								"type": "null"
+							},
+							"date_approved": {
+								"type": "null"
+							},
+							"origin_qty_inspected": {
+								"type": "integer"
+							},
+							"production_line": {
+								"type": "null"
+							},
+							"id": {
+								"type": "integer"
+							},
+							"unlinked_assignment": {
+								"type": "null"
+							},
+							"fields": {
+								"type": "object",
+								"properties": {
+									"id": {
+										"type": "integer"
+									},
+									"other_values": {
+										"type": "null"
+									},
+									"string_1": {
+										"type": "null"
+									},
+									"string_2": {
+										"type": "null"
+									},
+									"string_3": {
+										"type": "null"
+									},
+									"string_4": {
+										"type": "null"
+									},
+									"string_5": {
+										"type": "null"
+									},
+									"string_6": {
+										"type": "null"
+									},
+									"string_7": {
+										"type": "null"
+									},
+									"string_8": {
+										"type": "null"
+									},
+									"string_9": {
+										"type": "null"
+									},
+									"string_10": {
+										"type": "null"
+									},
+									"string_11": {
+										"type": "null"
+									},
+									"string_12": {
+										"type": "null"
+									},
+									"string_13": {
+										"type": "null"
+									},
+									"string_14": {
+										"type": "null"
+									},
+									"string_15": {
+										"type": "null"
+									},
+									"string_16": {
+										"type": "null"
+									},
+									"string_17": {
+										"type": "null"
+									},
+									"string_18": {
+										"type": "null"
+									},
+									"string_19": {
+										"type": "null"
+									},
+									"string_20": {
+										"type": "null"
+									},
+									"float_1": {
+										"type": "null"
+									},
+									"float_2": {
+										"type": "null"
+									},
+									"float_3": {
+										"type": "null"
+									},
+									"float_4": {
+										"type": "null"
+									},
+									"float_5": {
+										"type": "null"
+									},
+									"float_6": {
+										"type": "null"
+									},
+									"float_7": {
+										"type": "null"
+									},
+									"float_8": {
+										"type": "null"
+									},
+									"float_9": {
+										"type": "null"
+									},
+									"float_10": {
+										"type": "null"
+									},
+									"date_1": {
+										"type": "null"
+									},
+									"date_2": {
+										"type": "null"
+									},
+									"date_3": {
+										"type": "null"
+									},
+									"date_4": {
+										"type": "null"
+									},
+									"date_5": {
+										"type": "null"
+									},
+									"date_6": {
+										"type": "null"
+									},
+									"date_7": {
+										"type": "null"
+									},
+									"date_8": {
+										"type": "null"
+									},
+									"date_9": {
+										"type": "null"
+									},
+									"date_10": {
+										"type": "null"
+									},
+									"bool_1": {
+										"type": "boolean"
+									},
+									"bool_2": {
+										"type": "boolean"
+									},
+									"bool_3": {
+										"type": "boolean"
+									},
+									"bool_4": {
+										"type": "boolean"
+									},
+									"bool_5": {
+										"type": "boolean"
+									},
+									"bool_6": {
+										"type": "boolean"
+									},
+									"bool_7": {
+										"type": "boolean"
+									},
+									"bool_8": {
+										"type": "boolean"
+									},
+									"bool_9": {
+										"type": "boolean"
+									},
+									"bool_10": {
+										"type": "boolean"
+									},
+									"int_1": {
+										"type": "null"
+									},
+									"int_2": {
+										"type": "null"
+									},
+									"int_3": {
+										"type": "null"
+									},
+									"int_4": {
+										"type": "null"
+									},
+									"int_5": {
+										"type": "null"
+									},
+									"int_6": {
+										"type": "null"
+									},
+									"int_7": {
+										"type": "null"
+									},
+									"int_8": {
+										"type": "null"
+									},
+									"int_9": {
+										"type": "null"
+									},
+									"int_10": {
+										"type": "null"
+									},
+									"list_1": {
+										"type": "null"
+									},
+									"list_2": {
+										"type": "null"
+									},
+									"list_3": {
+										"type": "null"
+									},
+									"list_4": {
+										"type": "null"
+									},
+									"list_5": {
+										"type": "null"
+									},
+									"list_6": {
+										"type": "null"
+									},
+									"list_7": {
+										"type": "null"
+									},
+									"list_8": {
+										"type": "null"
+									},
+									"list_9": {
+										"type": "null"
+									},
+									"list_10": {
+										"type": "null"
+									}
+								}
+							},
+							"aql_minor": {
+								"type": "object",
+								"properties": {
+									"aql": {
+										"type": "number"
+									},
+									"id": {
+										"type": "integer"
+									}
+								}
+							},
+							"aql_major_b": {
+								"type": "object",
+								"properties": {
+									"aql": {
+										"type": "number"
+									},
+									"id": {
+										"type": "integer"
+									}
+								}
+							},
+							"aql_major_a": {
+								"type": "object",
+								"properties": {
+									"aql": {
+										"type": "number"
+									},
+									"id": {
+										"type": "integer"
+									}
+								}
+							},
+							"aql_critical": {
+								"type": "object",
+								"properties": {
+									"aql": {
+										"type": "number"
+									},
+									"id": {
+										"type": "integer"
+									}
+								}
+							},
+							"aql_major": {
+								"type": "object",
+								"properties": {
+									"aql": {
+										"type": "number"
+									},
+									"id": {
+										"type": "integer"
+									}
+								}
+							},
+							"fab_x_percentage_sampling": {
+								"type": "null"
+							},
+							"fab_x_percentage": {
+								"type": "null"
+							},
+							"fab_x_total_num_points": {
+								"type": "null"
+							},
+							"fab_x_weight_tol_min": {
+								"type": "null"
+							},
+							"fab_x_weight_tol_max": {
+								"type": "null"
+							},
+							"fab_x_width_tol_min": {
+								"type": "null"
+							},
+							"fab_x_width_tol_max": {
+								"type": "null"
+							},
+							"po_line": {
+								"type": "object",
+								"properties": {
+									"pol_attribute1": {
+										"type": "string"
+									},
+									"pol_attribute2": {
+										"type": "string"
+									},
+									"pol_attribute3": {
+										"type": "null"
+									},
+									"pol_attribute4": {
+										"type": "null"
+									},
+									"pol_attribute5": {
+										"type": "null"
+									},
+									"recycled": {
+										"type": "boolean"
+									},
+									"qty": {
+										"type": "integer"
+									},
+									"cost": {
+										"type": "integer"
+									},
+									"etd": {
+										"type": "string"
+									},
+									"eta": {
+										"type": "null"
+									},
+									"color": {
+										"type": "null"
+									},
+									"size": {
+										"type": "null"
+									},
+									"style": {
+										"type": "null"
+									},
+									"banner": {
+										"type": "null"
+									},
+									"fob_price": {
+										"type": "null"
+									},
+									"id": {
+										"type": "integer"
+									},
+									"po": {
+										"type": "object",
+										"properties": {
+											"importer_id": {
+												"type": "integer"
+											},
+											"exporter_id": {
+												"type": "integer"
+											},
+											"suppliers": {
+												"type": "object",
+												"properties": {
+													"name": {
+														"type": "string"
+													},
+													"description": {
+														"type": "null"
+													},
+													"address_line1": {
+														"type": "string"
+													},
+													"address_line2": {
+														"type": "string"
+													},
+													"zipcode": {
+														"type": "string"
+													},
+													"banner": {
+														"type": "null"
+													},
+													"erp_business_id": {
+														"type": "string"
+													},
+													"auto_inspect": {
+														"type": "boolean"
+													},
+													"city": {
+														"type": "null"
+													},
+													"state": {
+														"type": "null"
+													},
+													"country": {
+														"type": "null"
+													},
+													"unit_number": {
+														"type": "null"
+													},
+													"contact_name": {
+														"type": "null"
+													},
+													"contact_number": {
+														"type": "null"
+													},
+													"id": {
+														"type": "integer"
+													},
+													"other_codes": {
+														"type": "null"
+													},
+													"un_locode": {
+														"type": "null"
+													}
+												}
+											},
+											"po_number": {
+												"type": "string"
+											},
+											"order_date": {
+												"type": "string"
+											},
+											"origin": {
+												"type": "null"
+											},
+											"destination": {
+												"type": "null"
+											},
+											"recycled_at": {
+												"type": "null"
+											},
+											"customer_po": {
+												"type": "null"
+											},
+											"id": {
+												"type": "integer"
+											},
+											"project": {
+												"type": "object",
+												"properties": {
+													"name": {
+														"type": "string"
+													},
+													"project_code": {
+														"type": "string"
+													},
+													"id": {
+														"type": "integer"
+													}
+												}
+											},
+											"client": {
+												"type": "null"
+											},
+											"terms": {
+												"type": "string"
+											},
+											"buyer": {
+												"type": "null"
+											},
+											"store": {
+												"type": "null"
+											},
+											"tier2": {
+												"type": "null"
+											},
+											"merchandiser_user": {
+												"type": "null"
+											},
+											"type": {
+												"type": "string"
+											},
+											"factory": {
+												"type": "object",
+												"properties": {
+													"name": {
+														"type": "string"
+													},
+													"description": {
+														"type": "null"
+													},
+													"address_line1": {
+														"type": "string"
+													},
+													"address_line2": {
+														"type": "string"
+													},
+													"zipcode": {
+														"type": "string"
+													},
+													"banner": {
+														"type": "null"
+													},
+													"erp_business_id": {
+														"type": "string"
+													},
+													"auto_inspect": {
+														"type": "boolean"
+													},
+													"city": {
+														"type": "null"
+													},
+													"state": {
+														"type": "null"
+													},
+													"country": {
+														"type": "string"
+													},
+													"unit_number": {
+														"type": "null"
+													},
+													"contact_name": {
+														"type": "null"
+													},
+													"contact_number": {
+														"type": "null"
+													},
+													"id": {
+														"type": "integer"
+													},
+													"other_codes": {
+														"type": "null"
+													},
+													"un_locode": {
+														"type": "null"
+													}
+												}
+											},
+											"distribution_center": {
+												"type": "null"
+											},
+											"po_status": {
+												"type": "null"
+											},
+											"supplier_agreement": {
+												"type": "null"
+											}
+										}
+									},
+									"sku": {
+										"type": "object",
+										"properties": {
+											"sku_attribute1": {
+												"type": "null"
+											},
+											"sku_attribute2": {
+												"type": "null"
+											},
+											"sku_attribute3": {
+												"type": "null"
+											},
+											"sku_attribute4": {
+												"type": "null"
+											},
+											"sku_attribute5": {
+												"type": "null"
+											},
+											"item_name": {
+												"type": "string"
+											},
+											"sku_number": {
+												"type": "string"
+											},
+											"serial_number": {
+												"type": "null"
+											},
+											"cost": {
+												"type": "null"
+											},
+											"price": {
+												"type": "null"
+											},
+											"product_family": {
+												"type": "string"
+											},
+											"other_codes": {
+												"type": "null"
+											},
+											"item_description": {
+												"type": "string"
+											},
+											"material_types": {
+												"type": "null"
+											},
+											"recycled": {
+												"type": "boolean"
+											},
+											"id": {
+												"type": "integer"
+											},
+											"sku_ref_sheet": {
+												"type": "null"
+											},
+											"retail_price": {
+												"type": "null"
+											},
+											"model_number": {
+												"type": "null"
+											}
+										}
+									},
+									"unit": {
+										"type": "null"
+									},
+									"merchandiser": {
+										"type": "null"
+									},
+									"manager": {
+										"type": "null"
+									},
+									"season": {
+										"type": "string"
+									},
+									"packaging_type": {
+										"type": "null"
+									},
+									"master_carton_qty": {
+										"type": "integer"
+									},
+									"inner_pack_qty": {
+										"type": "integer"
+									},
+									"lot_number": {
+										"type": "string"
+									},
+									"bom_version": {
+										"type": "string"
+									},
+									"date_code": {
+										"type": "string"
+									},
+									"port_of_loading": {
+										"type": "string"
+									},
+									"port_of_arrival": {
+										"type": "string"
+									},
+									"ship_mode": {
+										"type": "string"
+									},
+									"currency": {
+										"type": "string"
+									},
+									"department": {
+										"type": "string"
+									},
+									"child_po_lines": {
+										"type": "array"
+									},
+									"business_unit": {
+										"type": "string"
+									},
+									"coalition": {
+										"type": "string"
+									},
+									"region": {
+										"type": "string"
+									},
+									"sourcing_office": {
+										"type": "string"
+									},
+									"sbu": {
+										"type": "string"
+									},
+									"sub_sbu": {
+										"type": "string"
+									},
+									"source_system": {
+										"type": "string"
+									},
+									"product_line": {
+										"type": "string"
+									},
+									"purchasing_group": {
+										"type": "null"
+									},
+									"buy_season": {
+										"type": "string"
+									},
+									"disabled": {
+										"type": "boolean"
+									},
+									"no_inspection_required": {
+										"type": "boolean"
+									},
+									"date_no_inspection_required_modified": {
+										"type": "null"
+									},
+									"no_inspection_required_modified_by_id": {
+										"type": "null"
+									},
+									"unique_key": {
+										"type": "null"
+									},
+									"reservation_number": {
+										"type": "null"
+									},
+									"reservation_number_updated_on": {
+										"type": "null"
+									},
+									"third_party_logistic": {
+										"type": "null"
+									},
+									"third_party": {
+										"type": "null"
+									},
+									"tier3": {
+										"type": "null"
+									},
+									"tier4": {
+										"type": "null"
+									}
+								}
+							},
+							"parts": {
+								"type": "string"
+							},
+							"units_per_carton": {
+								"type": "null"
+							},
+							"batch_n_serial_n": {
+								"type": "null"
+							},
+							"report_qa": {
+								"type": "string"
+							},
+							"report_merchandiser": {
+								"type": "string"
+							},
+							"sample_stage": {
+								"type": "string"
+							},
+							"inspection_report": {
+								"type": "object",
+								"properties": {
+									"total_critical_defects": {
+										"type": "integer"
+									},
+									"total_major_defects": {
+										"type": "integer"
+									},
+									"total_minor_defects": {
+										"type": "integer"
+									},
+									"defective_parts": {
+										"type": "integer"
+									},
+									"date_started": {
+										"type": "string"
+									},
+									"sections": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"total_major_defects_converted": {
+													"type": "integer"
+												},
+												"total_minor_defects_converted": {
+													"type": "integer"
+												},
+												"reject_minor_defects": {
+													"type": "integer"
+												},
+												"reject_major_defects": {
+													"type": "integer"
+												},
+												"reject_critical_defects": {
+													"type": "integer"
+												},
+												"quality_plan_section_results": {
+													"type": "array"
+												},
+												"title": {
+													"type": "string"
+												},
+												"qty_type": {
+													"type": "string"
+												},
+												"max_critical_defects": {
+													"type": "integer"
+												},
+												"section_result_id": {
+													"type": "integer"
+												},
+												"type_order": {
+													"type": "null"
+												},
+												"max_major_defects": {
+													"type": "integer"
+												},
+												"max_major_a_defects": {
+													"type": "integer"
+												},
+												"max_major_b_defects": {
+													"type": "integer"
+												},
+												"max_minor_defects": {
+													"type": "integer"
+												},
+												"defective_parts": {
+													"type": "integer"
+												},
+												"sampled_inspected": {
+													"type": "null"
+												},
+												"qty_inspected": {
+													"type": "null"
+												},
+												"second_sampling_applied": {
+													"type": "boolean"
+												},
+												"double_sampling": {
+													"type": "boolean"
+												},
+												"aql_minor": {
+													"type": "null"
+												},
+												"aql_critical": {
+													"type": "null"
+												},
+												"aql_major": {
+													"type": "null"
+												},
+												"inspection_method": {
+													"type": "null"
+												},
+												"inspection_level": {
+													"type": "null"
+												},
+												"quality_plan_id": {
+													"type": "null"
+												},
+												"defects": {
+													"type": "array"
+												},
+												"measure_table_results": {
+													"type": "array"
+												},
+												"pass_fail_results": {
+													"type": "array"
+												},
+												"quality_plan_conclusion": {
+													"type": "null"
+												},
+												"comment_results": {
+													"type": "array"
+												},
+												"checkpoints": {
+													"type": "array",
+													"items": {
+														"type": "object",
+														"properties": {
+															"title": {
+																"type": "string"
+															},
+															"subsection": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															},
+															"status": {
+																"type": "integer"
+															},
+															"type": {
+																"type": "string"
+															},
+															"percentage": {
+																"type": "null"
+															},
+															"mandatory": {
+																"type": "boolean"
+															},
+															"comment": {
+																"type": "string"
+															},
+															"checklistSubsection": {
+																"type": "null"
+															},
+															"id": {
+																"type": "integer"
+															},
+															"list_values": {
+																"type": "array"
+															},
+															"fieldRef": {
+																"type": "null"
+															},
+															"editable": {
+																"type": "boolean"
+															},
+															"recordable": {
+																"type": "boolean"
+															},
+															"specificField": {
+																"type": "boolean"
+															},
+															"specific_value": {
+																"type": "null"
+															},
+															"list": {
+																"type": "null"
+															},
+															"name": {
+																"type": "null"
+															},
+															"keys": {
+																"type": "array"
+															}
+														}
+													}
+												},
+												"roll_weight_unit": {
+													"type": "null"
+												},
+												"fabric_weight_unit": {
+													"type": "null"
+												},
+												"width_and_length_unit": {
+													"type": "null"
+												},
+												"fabric_rolls": {
+													"type": "array"
+												}
+											}
+										}
+									},
+									"pass_fails": {
+										"type": "array",
+										"items": {
+											"type": "object",
+											"properties": {
+												"title": {
+													"type": "string"
+												},
+												"subsection": {
+													"type": "string"
+												},
+												"value": {
+													"type": "string"
+												},
+												"status": {
+													"type": "integer"
+												},
+												"type": {
+													"type": "string"
+												},
+												"percentage": {
+													"type": "null"
+												},
+												"mandatory": {
+													"type": "boolean"
+												},
+												"comment": {
+													"type": "null"
+												},
+												"checklistSubsection": {
+													"type": "null"
+												},
+												"id": {
+													"type": "integer"
+												},
+												"list_values": {
+													"type": "array"
+												},
+												"fieldRef": {
+													"type": "null"
+												},
+												"editable": {
+													"type": "boolean"
+												},
+												"recordable": {
+													"type": "boolean"
+												},
+												"specificField": {
+													"type": "boolean"
+												},
+												"specific_value": {
+													"type": "null"
+												},
+												"list": {
+													"type": "null"
+												},
+												"name": {
+													"type": "null"
+												},
+												"keys": {
+													"type": "array"
+												}
+											}
+										}
+									},
+									"quality_plans": {
+										"type": "array"
+									},
+									"fabric_defect_resume": {
+										"type": "null"
+									}
+								}
+							},
+							"reported_by": {
+								"type": "string"
+							},
+							"shift": {
+								"type": "null"
+							}
+						}
+					}
+				},
+				"assignment_group": {
+					"type": "object",
+					"properties": {
+						"id": {
+							"type": "integer"
+						}
+					}
+				},
+				"inspection_method": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"id": {
+							"type": "integer"
+						}
+					}
+				},
+				"inspection_level": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"id": {
+							"type": "integer"
+						}
+					}
+				},
+				"report_url": {
+					"type": "string"
+				},
+				"travel_tag_number": {
+					"type": "null"
+				},
+				"shift": {
+					"type": "null"
+				},
+				"line": {
+					"type": "null"
+				},
+				"supervisor": {
+					"type": "null"
+				},
+				"comment": {
+					"type": "null"
+				},
+				"cutter": {
+					"type": "null"
+				},
+				"next_pqa_date": {
+					"type": "null"
+				},
+				"staff_id": {
+					"type": "null"
+				},
+				"assignments_reviewers": {
+					"type": "array"
+				},
+				"reviewer_user": {
+					"type": "null"
+				},
+				"spudi_lab_address": {
+					"type": "null"
+				},
+				"spudi_date": {
+					"type": "null"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

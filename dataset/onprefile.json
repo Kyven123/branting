@@ -1,0 +1,33 @@
+{
+	"name": "onprefile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "localfile",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "emp.txt",
+				"container": "firstcontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"PersonID": {
+					"type": "integer"
+				},
+				"Name": {
+					"type": "string"
+				},
+				"LastModifytime": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

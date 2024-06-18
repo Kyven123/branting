@@ -1,0 +1,7 @@
+{
+	"name": "AzureDataLakeStorage827",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/f937813f-00db-42d1-a443-1dd499e100de/resourceGroups/kyvennew/providers/Microsoft.Storage/storageAccounts/kyventest123",
+		"groupId": "dfs"
+	}
+}

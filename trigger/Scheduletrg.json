@@ -1,0 +1,25 @@
+{
+	"name": "Scheduletrg",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline5",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2024-06-06T09:06:00",
+				"endTime": "2024-06-08T19:06:00",
+				"timeZone": "China Standard Time"
+			}
+		}
+	}
+}

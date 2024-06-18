@@ -1,0 +1,18 @@
+{
+	"name": "AzureSqlDatabase1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "0523sql.database.windows.net",
+			"database": "database0523",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"hostNameInCertificate": "",
+			"authenticationType": "SQL",
+			"userName": "Kyven123",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEY0NUI1MjI4LTNCQjUtNDM2Qy1CMzdELTM5RTNDNEVBQjJENl8wM2Q1M2NlYy1jOTRiLTQzODAtYTRjMS0wOGUwMDZmYjEwYWYiDQp9"
+		}
+	}
+}

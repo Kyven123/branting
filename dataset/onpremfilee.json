@@ -1,0 +1,20 @@
+{
+	"name": "onpremfilee",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1test",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Booking.json",
+				"container": "firstcontainer"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

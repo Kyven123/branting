@@ -1,0 +1,20 @@
+{
+	"name": "SinkDatasett",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureStorageLinkedService1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Booking.json",
+				"container": "firstcontainer"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

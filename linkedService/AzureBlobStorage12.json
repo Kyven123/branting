@@ -1,0 +1,22 @@
+{
+	"name": "AzureBlobStorage12",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "kyvensecret"
+			}
+		},
+		"connectVia": {
+			"referenceName": "selfhostedir1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

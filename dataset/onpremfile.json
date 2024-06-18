@@ -1,0 +1,33 @@
+{
+	"name": "onpremfile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blobstorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Booking.json",
+				"container": "firstcontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"PersonID": {
+					"type": "integer"
+				},
+				"Name": {
+					"type": "string"
+				},
+				"LastModifytime": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
