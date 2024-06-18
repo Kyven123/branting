@@ -3,7 +3,7 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
-			"type": "LinkedServiceReference"
+			"type": ""
 		},
 		"annotations": [],
 		"type": "Json",
@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "Booking.json",
-				"container": "adfjobs"
+				"container": ""
 			}
 		},
 		"schema": {
