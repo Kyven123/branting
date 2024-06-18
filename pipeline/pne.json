@@ -1,0 +1,50 @@
+{
+	"name": "pipeline00",
+	"properties": {
+		"activities": [
+			{
+				"name": "Until1",
+				"type": "Until",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@equals(variables('TestVariable'),1)",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Set variable1",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"policy": {
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [
+								{
+									"name": "TestVariable",
+									"value": "Integer"
+								}
+							],
+							"typeProperties": {
+								"variableName": "TestVariable",
+								"value": 1
+							}
+						}
+					],
+					"timeout": "0.12:00:00"
+				}
+			}
+		],
+		"variables": {
+			"TestVariable": {
+				"type": "Integer",
+				"defaultValue": 0
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-06-06T05:28:45Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
