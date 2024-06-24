@@ -1,0 +1,29 @@
+{
+	"name": "scriptandzaure",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East Asia",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8
+			},
+			"ssisProperties": {
+				"customSetupScriptProperties": {
+					"blobContainerUri": "https://cpstorageaccoun.blob.core.windows.net/azuretolike",
+					"sasToken": {
+						"type": "SecureString",
+						"value": "**********"
+					}
+				},
+				"edition": "Standard",
+				"runtimeVersion": "2017",
+				"licenseType": "LicenseIncluded"
+			},
+			"customerVirtualNetwork": {
+				"subnetId": "/subscriptions/f937813f-00db-42d1-a443-1dd499e100de/resourceGroups/cptestadf/providers/Microsoft.Network/virtualNetworks/4thweekcp/subnets/Azuretalk"
+			}
+		}
+	}
+}
