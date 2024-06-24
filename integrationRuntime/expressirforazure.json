@@ -1,0 +1,36 @@
+{
+	"name": "expressirforazure",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US 2",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "azuretoir.database.windows.net",
+					"catalogAdminUserName": "admin",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"runtimeVersion": "2017",
+				"licenseType": "LicenseIncluded",
+				"expressCustomSetupProperties": [
+					{
+						"type": "AzPowerShellSetup",
+						"typeProperties": {
+							"version": "7.4.3"
+						}
+					}
+				]
+			}
+		}
+	}
+}
