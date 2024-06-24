@@ -1,0 +1,26 @@
+{
+	"name": "customsetir",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US 2",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 8
+			},
+			"ssisProperties": {
+				"customSetupScriptProperties": {
+					"blobContainerUri": "https://cpstorageaccoun.blob.core.windows.net/localcontainer",
+					"sasToken": {
+						"type": "SecureString",
+						"value": "**********"
+					}
+				},
+				"edition": "Standard",
+				"runtimeVersion": "2017",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
