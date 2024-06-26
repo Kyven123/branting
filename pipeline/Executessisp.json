@@ -1,0 +1,56 @@
+{
+	"name": "Executessisp",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute SSIS package1",
+				"type": "ExecuteSSISPackage",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"packageLocation": {
+						"packagePath": "\\\\cpstorageaccoun.file.core.windows.net\\dtsxpackage\\PackageN.dtsx",
+						"type": "File",
+						"typeProperties": {
+							"accessCredential": {
+								"domain": "Azure",
+								"userName": "cpstorageaccoun",
+								"password": {
+									"type": "SecureString",
+									"value": "**********"
+								}
+							}
+						}
+					},
+					"connectVia": {
+						"referenceName": "customsetir",
+						"type": "IntegrationRuntimeReference"
+					},
+					"loggingLevel": "Basic",
+					"logLocation": {
+						"logPath": "\\\\cpstorageaccoun.file.core.windows.net\\dtsxpackage",
+						"type": "File",
+						"typeProperties": {
+							"accessCredential": {
+								"domain": "Azure",
+								"userName": "cpstorageaccoun",
+								"password": {
+									"type": "SecureString",
+									"value": "**********"
+								}
+							}
+						}
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
